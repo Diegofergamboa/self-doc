@@ -1,0 +1,22 @@
+{
+  "name": "self-doc",
+  "version": "1.0.0",
+  "description": "A place to put the self documentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diegofergamboa/self-doc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Diegofergamboa/self-doc/issues"
+  },
+  "homepage": "https://github.com/Diegofergamboa/self-doc#readme",
+  "dependencies": {
+    "@flaticon/flaticon-uicons": "^1.7.0"
+  }
+}

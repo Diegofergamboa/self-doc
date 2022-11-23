@@ -1,6 +1,12 @@
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: monospace, serif;
+}
+
+.fi {
+    color: #ffffff;
 }
