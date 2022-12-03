@@ -1,0 +1,27 @@
+
+
+.header {
+    /* Background */
+    background: url(../../assets/stars2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: transparent;
+    /* Container */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.header aside {
+    width: 50%;
+    display: flex;
+}
+
+.header svg {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 50%;
+}

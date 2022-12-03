@@ -3,4 +3,76 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: monospace, serif;
+    color: #1a1a1a;
+    font-size: 24px;
+}
+
+body {
+    --color-primary: #277BC0;
+    --color-secondary: #FFB200;
+    --color-third: #FFCB42;
+    --color-white: #FFF4CF;
+    --color-fail: #eb3a5d;
+    --color-check: #1ec06a;
+}
+
+/*! color: var(--second-color); */
+
+
+ri {
+    font-size: 16px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+a::after,
+a::before,
+a:hover,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+a:hover,
+a:visited,
+a:focus,
+button:hover,
+button:visited,
+button:focus {
+    transform: scale(1.05);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.button-primary {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    font-size: 28px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-white);
+    box-shadow: 2px 2px 6px var(--color-primary);
+    padding: 12px 36px;
+    border-radius: 3px;
+    color: var(--color-white);
+    text-transform: uppercase;
+}
+
+.button-secondary {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    font-size: 24px;
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-white);
+    box-shadow: 2px 2px 6px var(--color-primary);
+    padding: 12px;
+    border-radius: 3px;
+    color: var(--color-white);
 }
