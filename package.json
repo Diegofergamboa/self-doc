@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Diegofergamboa/self-doc#readme",
   "dependencies": {
-    "@flaticon/flaticon-uicons": "^1.7.0"
+    "@flaticon/flaticon-uicons": "^1.7.0",
+    "http-server": "^14.1.1"
   }
 }
