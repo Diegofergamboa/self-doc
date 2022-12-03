@@ -8,10 +8,13 @@
     background-position: bottom;
     background-color: transparent;
     /* Container */
+    display: grid;
+    align-content:flex-start;
+    gap: 14px;
+    place-items: center;
     position: relative;
-    display: flex;
     width: 100%;
-    height: 70vh;
+    height: 90vh;
 }
 
 .header aside {
@@ -23,5 +26,48 @@
     position: absolute;
     width: 100%;
     height: 40%;
-    bottom: 50%;
+    bottom: 25%;
+}
+
+/* Image setup */
+
+.header__figure {
+    display: grid;
+    place-items: center;
+}
+
+.header__figure-image {
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--color-third);
+    border-radius: 50%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+
+.header__figure-figcaption {
+    margin: 6px;
+    color: var(--color-primary);
+}
+
+.header__figure-figcaption {
+    color: var(--color-white);
+}
+
+
+/* List items from the contact header */ 
+
+.header__contact {
+    display: flex;
+    margin-top: 18px;
+    gap: 12px;
+}
+
+.header__contact .ri {
+    display: flex;
+    color: var(--color-white);
+    font-size: 40px;
 }

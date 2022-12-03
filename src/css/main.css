@@ -19,8 +19,8 @@ body {
 /*! color: var(--second-color); */
 
 
-ri {
-    font-size: 16px;
+.ri {
+    font-size: 30px;
 }
 
 
@@ -28,6 +28,14 @@ a {
     text-decoration: none;
 }
 
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
 
 a::after,
 a::before,
@@ -55,10 +63,11 @@ button:focus {
     place-content: center;
     place-items: center;
     font-size: 28px;
-    background-color: var(--color-primary);
+    background-color: transparent;
     border: 1px solid var(--color-white);
     box-shadow: 2px 2px 6px var(--color-primary);
-    padding: 12px 36px;
+    margin: 12px;
+    padding: 12px 24px;
     border-radius: 3px;
     color: var(--color-white);
     text-transform: uppercase;
