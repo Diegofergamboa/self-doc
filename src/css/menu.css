@@ -1,0 +1,79 @@
+/* animation settings */
+/* container and grid section-menu-containers */
+
+.section-menu-container {
+    
+    margin: 20px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 150px);
+    grid-gap: 12px;
+    grid-auto-flow: row;
+}
+
+.section-menu-container__one {
+    background: rgb(48, 96, 139);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.section-menu-container__two {
+    background: blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+}
+
+.section-menu-container__three {
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-column: 4 / 5;
+}
+
+.section-menu-container__four {
+    background-color: yellow;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-column: 5 / 6;
+    grid-row: 1 / 4;
+}
+
+.section-menu-container__five {
+    background-color: purple;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+.section-menu-container__six {
+    background-color: green;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-column: 1 / 4;
+}
+
+
+.section-menu-container__seven {
+    background-color: gold;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    grid-column: 4 / 6;
+}

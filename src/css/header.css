@@ -14,7 +14,14 @@
     place-items: center;
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 70vh;
+    border-bottom: 5px solid var(--color-third);
+}
+
+@media (max-width: 770px) {
+    .header {
+        height: 70vh;
+    }
 }
 
 .header aside {
@@ -22,11 +29,23 @@
     display: flex;
 }
 
+.header  {
+    z-index: 2;
+    display: relative;
+}
+
 .header svg {
     position: absolute;
     width: 100%;
     height: 40%;
     bottom: 25%;
+}
+
+@media (max-width: 430px) {
+    .header svg {
+        height: 20vh;
+        bottom: 15vh;
+    }
 }
 
 /* Image setup */
@@ -62,7 +81,7 @@
 
 .header__contact {
     display: flex;
-    margin-top: 18px;
+    margin-top: 40px;
     gap: 12px;
 }
 
@@ -70,4 +89,41 @@
     display: flex;
     color: var(--color-white);
     font-size: 40px;
+}
+
+/* Animation setting of the title */
+.header__title {
+    letter-spacing: 6px;
+    font-size: 54px;
+    color: var(--color-white);
+}
+
+.header__title {
+    position: absolute;
+    bottom: 10%;
+    margin: 0 auto;
+
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 28ch;
+
+    animation: typing 2s steps(28), blink 0.7s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width : 0 }
+}
+
+@keyframes nlink {
+    50% { border-color : var(--color-white) }
+}
+
+@media (max-width: 770px) {
+    .header__title {
+        font-size: 30px;
+        width: 16ch;
+        animation: typing 1s steps(16)
+    }
 }
