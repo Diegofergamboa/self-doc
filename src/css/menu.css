@@ -2,7 +2,6 @@
 /* container and grid section-menu-containers */
 
 .section-menu-container {
-    
     margin: 20px auto;
     width: 90%;
     display: grid;
@@ -12,8 +11,28 @@
     grid-auto-flow: row;
 }
 
+.section-menu-container article {
+    position: relative;
+}
+
+.section-menu-container article div p {
+    color: var(--color-white);
+}
+.section-menu-container article div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 25%;
+    left: 0;
+    background: linear-gradient(90deg, rgba(255, 178, 0, 0.7), rgba(39, 123, 192, 0.7));
+}
+
 .section-menu-container__one {
-    background: rgb(48, 96, 139);
+    background: url('../../assets/code.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,7 +42,7 @@
 }
 
 .section-menu-container__two {
-    background: blue;
+    background: url('../../assets/artificial.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,7 +50,7 @@
 }
 
 .section-menu-container__three {
-    background-color: red;
+    background: url('../../assets/key-screen.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -40,7 +59,7 @@
 }
 
 .section-menu-container__four {
-    background-color: yellow;
+    background: url('../../assets/laptop-g.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +69,7 @@
 }
 
 .section-menu-container__five {
-    background-color: purple;
+    background: url('../../assets/laptop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -60,7 +79,7 @@
 }
 
 .section-menu-container__six {
-    background-color: green;
+    background: url('../../assets/tech-ball.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -68,12 +87,30 @@
     grid-column: 1 / 4;
 }
 
-
 .section-menu-container__seven {
-    background-color: gold;
+    background: url('../../assets/key-screen.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: grid;
     grid-column: 4 / 6;
+}
+
+
+.section-menu-container:hover .flip-vertical {
+	animation: slit-in-vertical 0.45s both;
+}
+
+@keyframes slit-in-vertical {
+    0% {
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0;
+    }
+    54% {
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateZ(0) rotateY(0);
+    }
 }
