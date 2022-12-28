@@ -84,3 +84,36 @@ button:focus {
     border-radius: 3px;
     color: var(--color-white);
 }
+
+.button-third {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+}
+
+.button__color-animated {
+	animation: change-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color {
+    0% {
+        color: var(--color-primary);
+    }
+    25% {
+        color: var(--color-secondary);
+    }
+    50% {
+        color: var(--color-third);
+    }
+    75% {
+        color: var(--color-secondary);
+    }
+    100% {
+        color: var(--color-primary);
+    }
+}
